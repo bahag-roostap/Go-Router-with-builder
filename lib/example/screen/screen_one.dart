@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router_test/services/navigation/route_constants.dart';
+import 'package:go_router_test/example/services/navigation/route_constants.dart';
 
 class ScreenOne extends StatelessWidget {
   const ScreenOne({

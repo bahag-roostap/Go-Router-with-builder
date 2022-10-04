@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router_test/services/navigation/navigator.dart';
+import 'package:go_router_test/example/services/navigation/navigator.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router_test/screen/home.dart';
-import 'package:go_router_test/screen/screen_one.dart';
-import 'package:go_router_test/screen/screen_three.dart';
-import 'package:go_router_test/screen/screen_two.dart';
-import 'package:go_router_test/services/navigation/route_constants.dart';
+import 'package:go_router_test/example/screen/home.dart';
+import 'package:go_router_test/example/screen/screen_one.dart';
+import 'package:go_router_test/example/screen/screen_three.dart';
+import 'package:go_router_test/example/screen/screen_two.dart';
+import 'package:go_router_test/example/services/navigation/route_constants.dart';
 
 part 'navigator.g.dart';
 
