@@ -3,7 +3,8 @@ import 'dart:ui';
 import 'package:custom_widgets/custom_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router_test/without_builder/store/widgets/scrollable_sheet.dart';
+import 'package:go_router_test/navigator.dart';
+import 'package:go_router_test/store/widgets/scrollable_sheet.dart';
 
 class BottomTabBar extends StatelessWidget {
   BottomTabBar({super.key});
@@ -14,7 +15,6 @@ class BottomTabBar extends StatelessWidget {
     BahagIcons.bottomNavbarDiy,
     BahagIcons.bottomNavbarCart,
   ]);
-  final routes = ['/home', '/products', '/diy', '/cart'];
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class BottomTabBar extends StatelessWidget {
               children: [
                 GestureDetector(
                   behavior: HitTestBehavior.translucent,
-                  onTap: () => GoRouter.of(context).go("/home"),
+                  onTap: () => HomeRoute().go(context),
                   child: SizedBox(
                     width: givenWidth,
                     child: Column(
@@ -66,7 +66,7 @@ class BottomTabBar extends StatelessWidget {
                 ),
                 GestureDetector(
                   behavior: HitTestBehavior.translucent,
-                  onTap: () => GoRouter.of(context).go("/products"),
+                  onTap: () => CategoriesRoute().go(context),
                   child: SizedBox(
                     width: givenWidth,
                     child: Column(
@@ -102,7 +102,7 @@ class BottomTabBar extends StatelessWidget {
                 ),
                 GestureDetector(
                   behavior: HitTestBehavior.translucent,
-                  onTap: () => GoRouter.of(context).go("/diy"),
+                  onTap: () => DiyRoute().go(context),
                   child: SizedBox(
                     width: givenWidth,
                     child: Column(
@@ -133,7 +133,7 @@ class BottomTabBar extends StatelessWidget {
                 ),
                 GestureDetector(
                   behavior: HitTestBehavior.translucent,
-                  onTap: () => GoRouter.of(context).go("/cart"),
+                  onTap: () => CartRoute().go(context),
                   child: SizedBox(
                     width: givenWidth,
                     child: Column(

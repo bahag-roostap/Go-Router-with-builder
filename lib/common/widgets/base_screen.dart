@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router_test/without_builder/common/widgets/bottom_tab_bar.dart';
-import 'package:go_router_test/without_builder/common/widgets/suggestions_list.dart';
-import 'package:go_router_test/without_builder/store/widgets/scrollable_sheet.dart';
+import 'package:go_router_test/common/widgets/bottom_tab_bar.dart';
+import 'package:go_router_test/common/widgets/suggestions_list.dart';
+import 'package:go_router_test/store/widgets/scrollable_sheet.dart';
 
 import 'app_header.dart';
 
