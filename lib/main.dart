@@ -4,11 +4,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:go_router_test/about_screen.dart';
 import 'package:go_router_test/categories_screen.dart';
+import 'package:go_router_test/common/service/firebase_analytics.dart';
 import 'package:go_router_test/common/widgets/base_screen.dart';
 import 'package:go_router_test/product_details.dart';
 import 'package:go_router_test/profile_screen.dart';
 import 'package:go_router_test/search_screen.dart';
 
+import 'common/service/go_router_observer.dart';
 import 'common/widgets/content_screen.dart';
 
 final GlobalKey<NavigatorState> _rootNavigatorKey =
@@ -37,6 +39,9 @@ class BAUHAUSApp extends StatelessWidget {
   final GoRouter _router = GoRouter(
     navigatorKey: _rootNavigatorKey,
     initialLocation: '/home',
+    observers: [
+      GoRouterObserver(analytics: FirebaseAnalytics()),
+    ],
     routes: <RouteBase>[
       GoRoute(
         parentNavigatorKey: _rootNavigatorKey,
@@ -133,7 +138,6 @@ class BAUHAUSApp extends StatelessWidget {
           GoRoute(
             path: '/productList/:text',
             builder: (BuildContext context, GoRouterState state) {
-              print('/productList pageKey = ${state.pageKey}');
               return SearchScreen(
                 text: state.params['text'].toString(),
               );
