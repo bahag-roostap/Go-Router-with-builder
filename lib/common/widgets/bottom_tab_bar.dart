@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:custom_widgets/custom_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router_test/without_builder/store/widgets/scrollable_sheet.dart';
+import 'package:go_router_test/store/widgets/scrollable_sheet.dart';
 
 class BottomTabBar extends StatelessWidget {
   BottomTabBar({super.key});

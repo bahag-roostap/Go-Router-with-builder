@@ -2,12 +2,12 @@ import 'package:custom_widgets/custom_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:go_router_test/without_builder/about_screen.dart';
-import 'package:go_router_test/without_builder/categories_screen.dart';
-import 'package:go_router_test/without_builder/common/widgets/base_screen.dart';
-import 'package:go_router_test/without_builder/product_details.dart';
-import 'package:go_router_test/without_builder/profile_screen.dart';
-import 'package:go_router_test/without_builder/search_screen.dart';
+import 'package:go_router_test/about_screen.dart';
+import 'package:go_router_test/categories_screen.dart';
+import 'package:go_router_test/common/widgets/base_screen.dart';
+import 'package:go_router_test/product_details.dart';
+import 'package:go_router_test/profile_screen.dart';
+import 'package:go_router_test/search_screen.dart';
 
 import 'common/widgets/content_screen.dart';
 
